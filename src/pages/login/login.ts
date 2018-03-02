@@ -31,7 +31,7 @@ export class LoginPage {
   }
 
   alertBox(){
-    this.alertCtrl,create({
+    this.alertCtrl.create({
       subTitle: this.account.email,
       buttons:['OK']
     }).present();
