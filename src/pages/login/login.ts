@@ -18,6 +18,9 @@ export class LoginPage {
   account:{
     email:string,
     password:string
+  } = {
+    email: "test@email.com",
+    password: "12345678"
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
