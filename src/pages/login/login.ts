@@ -41,6 +41,7 @@ export class LoginPage {
     console.log('Click success');
     console.log('email',this.account.email);
     console.log('password',this.account.password);
+    this.alertBox();
   }
 
 }
