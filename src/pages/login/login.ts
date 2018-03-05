@@ -43,7 +43,8 @@ export class LoginPage {
     console.log('email',this.account.email);
     console.log('password',this.account.password);
     this.alertBox();
-    this.navCtrl.push(MainPage);
+    let item = this.account;
+    this.navCtrl.push(MainPage,item);
   }
 
 }
