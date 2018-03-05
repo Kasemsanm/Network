@@ -29,7 +29,7 @@ export class MainPage {
   }
 
   httpFunction(){
-    this.http.get("http://jsonplaceholder.typicode.com/posts&UserId=1&UserId=5").subscribe(response => {
+    this.http.get("http://jsonplaceholder.typicode.com/posts?UserId=1&UserId=5").subscribe(response => {
       console.log(response);
     },err => {
       console.log(err);
