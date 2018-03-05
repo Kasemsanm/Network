@@ -29,11 +29,22 @@ export class MainPage {
   }
 
   httpFunction(){
-    this.http.get("http://jsonplaceholder.typicode.com/posts?user(Id=1&Id=5)").subscribe(response => {
+    this.http.get("http://jsonplaceholder.typicode.com/posts&UserId=1&UserId=5").subscribe(response => {
       console.log(response);
     },err => {
       console.log(err);
     })
-  }
 
+     //Method Post
+    let item = {
+      fname : "somename",
+      lname : "somelastname"
+    };
+    this.http.post("http://jsonplaceholder.typicode.com/posts",item).subscribe(response => {
+      console.log(response);
+    },err => {
+      console.log(err);
+    })
+
+  }
 }
