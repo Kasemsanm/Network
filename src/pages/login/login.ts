@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { MainPage } from '../main/main';
 
 /**
  * Generated class for the LoginPage page.
@@ -42,6 +43,7 @@ export class LoginPage {
     console.log('email',this.account.email);
     console.log('password',this.account.password);
     this.alertBox();
+    this.navCtrl.push(MainPage);
   }
 
 }
