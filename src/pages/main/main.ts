@@ -27,10 +27,13 @@ export class MainPage {
     // console.log(this.datafromprevious_page);
     this.httpFunction();
   }
+  
+  datafromhttp:any;
 
   httpFunction(){
     this.http.get("http://jsonplaceholder.typicode.com/posts?userId=1&userId=5").subscribe(response => {
       console.log(response);
+      this.datafromhttp = response;
     },err => {
       console.log(err);
     })
