@@ -24,7 +24,8 @@ export class MainPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
-    console.log(this.datafromprevious_page);
+    // console.log(this.datafromprevious_page);
+    this.httpFunction();
   }
 
   httpFunction(){
