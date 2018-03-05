@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
 
 /**
  * Generated class for the MainPage page.
@@ -17,7 +18,7 @@ export class MainPage {
 
   datafromprevious_page:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams ,public http:HttpClient) {
     this.datafromprevious_page = navParams.data;
   }
 
