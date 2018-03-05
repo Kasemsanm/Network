@@ -27,4 +27,12 @@ export class MainPage {
     console.log(this.datafromprevious_page);
   }
 
+  httpFunction(){
+    this.http.get("http://jsonplaceholder.typicode.com/posts").subscribe(response => {
+      console.log(response);
+    },err => {
+      console.log(err);
+    })
+  }
+
 }
