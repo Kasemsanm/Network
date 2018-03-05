@@ -15,11 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainPage {
 
+  datafromprevious_page:any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.datafromprevious_page = navParams.data;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
+    console.log(this.datafromprevious_page);
   }
 
 }
