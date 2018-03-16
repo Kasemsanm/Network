@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
+import { DisplayPage } from '../display/display';
 
 /**
  * Generated class for the MainPage page.
@@ -49,5 +50,9 @@ export class MainPage {
       console.log(err);
     })
 
+  }
+
+  toDisplayPageClick(item){
+    this.navCtrl.push(DisplayPage,item);
   }
 }

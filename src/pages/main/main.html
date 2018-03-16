@@ -16,7 +16,7 @@
 <ion-content padding>
   <ion-list *ngFor="let item of datafromhttp">
     <ion-item>
-      <ion-label>
+      <ion-label (click)="toDisplayPageClick(item)">
         UserId = {{item['userId']}}
         Id = {{item['id']}}
       </ion-label>
