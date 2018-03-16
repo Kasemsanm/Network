@@ -14,18 +14,28 @@
 
 
 <ion-content padding>
-  <ion-item>
-    UserId = {{display_data['userId']}}
-  </ion-item>
-  <ion-item>
-    Id = {{display_data['Id']}}
-  </ion-item>
-  <ion-item>
-    Title = {{display_data['title']}}
-  </ion-item>
-  <ion-item>
-    Body = {{display_data['body']}}
-  </ion-item>
-  <img src="https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg">
-  <img src="../../assets/imgs/image.jpg">
+  <ion-slids>
+    <ion-slid>
+        <ion-item>
+            UserId = {{display_data['userId']}}
+          </ion-item>
+          <ion-item>
+            Id = {{display_data['Id']}}
+          </ion-item>
+          <ion-item>
+            Title = {{display_data['title']}}
+          </ion-item>
+          <ion-item>
+            Body = {{display_data['body']}}
+          </ion-item>
+    </ion-slid>
+    <ion-slide>
+        <img src="https://static.pexels.com/photos/371633/pexels-photo-371633.jpeg">
+
+    </ion-slide>
+    <ion-slide>
+        <img src="../../assets/imgs/image.jpg">
+
+    </ion-slide>
+  </ion-slids>
 </ion-content>
