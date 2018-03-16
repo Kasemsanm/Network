@@ -53,6 +53,7 @@ export class MainPage {
   }
 
   toDisplayPageClick(item){
+    console.log(item);
     this.navCtrl.push(DisplayPage,item);
   }
 }
