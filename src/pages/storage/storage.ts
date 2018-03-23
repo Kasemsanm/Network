@@ -21,6 +21,7 @@ export class StoragePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StoragePage');
+    this.loadStorageValue();
   }
 
   storeVar:any
