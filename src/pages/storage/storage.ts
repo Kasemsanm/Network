@@ -23,4 +23,16 @@ export class StoragePage {
     console.log('ionViewDidLoad StoragePage');
   }
 
+  storeVar:any
+
+  storeDataClick(){
+    this.storage.set('save',this.storeVar);
+  }
+
+  loadStorageValue(){
+    this.storage.get('save').then(val => {
+      console.log(val);
+    })
+  }
+
 }
