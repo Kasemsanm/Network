@@ -41,8 +41,7 @@ import { StoragePage } from '../pages/storage/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    HttpClientModule,
-    IonicStorageModule
+    HttpClientModule
   ]
 })
 export class AppModule {}

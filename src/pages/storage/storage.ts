@@ -22,6 +22,7 @@ export class StoragePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad StoragePage');
     this.loadStorageValue();
+    this.loadStorageValue_Async();
   }
 
   storeVar:any
@@ -33,6 +34,13 @@ export class StoragePage {
   loadStorageValue(){
     this.storage.get('save').then(val => {
       console.log(val);
+    })
+  }
+
+  async loadStorageValue_Async(){
+    let temp: any;
+    temp = await this.storage.get('save').then(val => {
+      return val;
     })
   }
 
